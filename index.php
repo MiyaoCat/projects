@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Miyaomix.com 🐅 </title>
-	<meta name="description" content="Welcome to John's project site. Click or tap to view John's work!">
-	<meta property="og:image" content="https://peprojects.dev/alpha-4/john/meta-image2.jpg" />
-	<link rel="stylesheet" href="style.css">
-</head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About</li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+
+<?php include('header.php');?>
 
 	<main>
 		<section class="intro">
@@ -77,12 +62,7 @@
 		</section>
 	</main>
 	
-	<footer>
-		<ul>
-			<li><a href="challenge-1/contact.html">Contact</a></li>
-			<li><a href="challenge-1/about.html">About</a></li>
-		</ul>	
-	</footer>
+<?php include('footer.php'); ?>
 
 </body>
 </html>
