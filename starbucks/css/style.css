@@ -64,7 +64,7 @@ strong {
 	color: black;
 	font-weight: 400;
 	border: 1px solid black;
-	padding: 7px 14px;
+	padding: 6px 12px;
 	border-radius: 20px;
 }
 .button.black {
@@ -229,13 +229,11 @@ strong {
 	.icon svg {
 		width: 100%;
 		height: auto;
-		border: 1px solid blue;
 	}
 
 	.icon {
-		width: 1.2rem;
-		height: 1.2rem;
-		border: 1px solid black;
+		width: 1.7rem;
+		height: 1.7rem;
 	}
 
 	.store-locator {
@@ -244,8 +242,7 @@ strong {
 		align-items: center;
 		padding: 5px;
 		/*margin-right: 25px;*/
-		gap: 10px;
-		border: 1px solid red;
+		gap: 8px;
 	}
 
 	.store-locator:hover, .store-locator:hover path {
