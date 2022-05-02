@@ -53,6 +53,14 @@ strong {
 	color: #006241;
 }
 
+.company a:hover {
+	color: black;
+}
+
+.docs a:hover {
+	text-decoration: underline;
+}
+
 .links-left {
 	text-transform: uppercase;
 	font-weight: 600;
@@ -79,6 +87,22 @@ strong {
 
 .button.green {
 	color: var(--starbucks-dark);
+}
+
+ .button:hover {
+	background-color: rgba(1,1,1,.08);
+}
+
+main .button:hover {
+	background-color: rgba(1,1,1,.08);
+}
+
+.row.three .button:hover, .row.four .button:hover {
+	/*background-color: rgba(255,255,255,.2);*/
+}
+
+.row:nth-of-type(3) .button:hover, .row:nth-of-type(4) .button:hover{
+	background-color: rgba(255,255,255,.2);
 }
 
 .links-right {
@@ -246,7 +270,7 @@ strong {
 	}
 
 	.store-locator:hover, .store-locator:hover path {
-		color: green;
+		color: var(--starbucks-dark);
 		fill: currentColor;
 	}
 
