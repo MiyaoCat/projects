@@ -89,7 +89,7 @@ strong {
 	color: var(--starbucks-dark);
 }
 
- .button:hover {
+.button:hover {
 	background-color: rgba(1,1,1,.08);
 }
 
@@ -101,7 +101,7 @@ main .button:hover {
 	/*background-color: rgba(255,255,255,.2);*/
 }
 
-.row:nth-of-type(3) .button:hover, .row:nth-of-type(4) .button:hover{
+.row:nth-of-type(2) .button:hover, .row:nth-of-type(3) .button:hover{
 	background-color: rgba(255,255,255,.2);
 }
 
@@ -305,7 +305,7 @@ main .inner-column {
 	background-color: var(--starbucks-light);
 }
 
-.row.three, .row.four {
+.row.two, .row.three {
 	background-color: var(--starbucks-dark);
 }
 
