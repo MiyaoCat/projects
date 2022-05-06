@@ -15,6 +15,12 @@ img {
 	height:  auto;
 }
 
+svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .inner-column {
 	display: flex;
 	max-width: 1456px;
@@ -30,8 +36,8 @@ body {
 	--font-dark: rgba(0,0,0,1);
 	font-family: SoDoSans, Helvetica Neue, Helvetica;
 	font-size: 14px;
-	line-height: 1.5em;
-	letter-spacing: .05em;
+	line-height: 1.5;
+	letter-spacing: .05;
 }
 
 a {
@@ -64,7 +70,7 @@ strong {
 .links-left {
 	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: .2em;
+	letter-spacing: .2;
 }
 
 .button {
@@ -112,8 +118,8 @@ main .button:hover {
 .loud-voice {
 	font-size: 28px;
 	font-weight: 700;
-	line-height: 1.2em;
-	letter-spacing: .05em;
+	line-height: 1.2;
+	letter-spacing: .05;
 }
 
 .loud-voice.green {
@@ -135,15 +141,15 @@ main .button:hover {
 .attention-voice {
 	font-size: 22px;
 	font-weight: 400;
-	letter-spacing: .05em;
-	line-height: 1.4em;
+	letter-spacing: .05;
+	line-height: 1.4;
 }
 
 .normal-voice {
 	font-size: 22px;
 	font-weight: 500;
-	letter-spacing: .04em;
-	line-height: 1.5em;
+	letter-spacing: .04;
+	line-height: 1.5;
 }
 
 .normal-voice.white {
@@ -157,8 +163,8 @@ main .button:hover {
 .soft-voice {
 	font-size: 16px;
 	font-weight: 350;
-	letter-spacing: .05em;
-	line-height: 1.5em;
+	letter-spacing: .05;
+	line-height: 1.5;
 }
 
 .soft-voice.white {
