@@ -49,7 +49,7 @@ strong {
 .attention-voice {
 	text-transform: uppercase;
 	font-weight: 300;
-	color: white;
+	color: rgba(255,255,255,.3);
 }
 
 .bold-voice {
@@ -73,7 +73,7 @@ strong {
 .quiet-voice {
 	font-size: 12px;
 	font-weight: 300;
-	color: white;	
+	color: rgba(255,255,255,.3);
 }
 
 main {
