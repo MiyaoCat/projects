@@ -1,0 +1,101 @@
+@import 'meyer-reset.css';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Chalkboard;
+	background-color: hsl(172, 100%, 88%);
+}
+
+picture {
+	display: block;
+	border-radius: 10%;
+	max-width: 200px;
+}
+
+picture img {
+	display: block;
+	width:  100%;
+	height:  auto;
+}
+
+/* - - FONT - - */
+.header-voice {
+	font-family: Marker Felt;
+	font-size: clamp(40px, 5vw, 100px);
+	text-align: center;
+	margin: 40px 0;
+}
+
+.name {
+	font-family: Marker Felt;
+	font-size:  20px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.age {
+	font-weight: 700;
+	margin: 8px 0;
+}
+
+/* - - ADOPT BUTTON - - */
+ {
+	text-transform: uppercase;
+}
+
+nav {
+	min-height: 70px;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* - - MONSTER CARDS - - */
+.monster {
+	padding: 10px;
+}
+
+monster-card {
+	border: 1px solid blue;
+	background-color:  blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

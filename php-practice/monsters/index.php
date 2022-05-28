@@ -1,158 +1,166 @@
-<head>
-	<style>
-		html {
-			background-color: hsl(200, 65%, 80%);
-		}
-		.foreach {
-			padding: 10px;
-			background-color: hsl(300, 65%, 60%);
-		}
-		.array {
-			padding: 10px;
-			background-color: hsl(400, 65%, 60%);
-		}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		.foreach2 {
-		padding: 10px;
-		background-color: hsl(500, 65%, 60%);
-		}
+		<meta property="og:image" content="[IMAGE URL]">
+		<meta name="description" content="Adopt a friendly Monster TODAY!">
+		<title>Adopt a Monster</title>
 
-		.foreach2 ol {
-			display: flex;
-			flex-direction: row;
-		}
-		.monster {
-			display: block;
-			border: 2px solid black;
-			padding: 15px;
-			margin: 10px;
-		}
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-	</style>
-</head>
+	<body>
+		<header>
+			<section class='inner-column'>
+				<nav>
+					<ul>
+						<li>Home</li>
+						<li>Monsters</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+			</section>
+		</header>
 
-	
-<div class="array">
-	<h1>Array Practice</h1>
-
-	<?php 
-
-		$myArray = [
-			"one",
-			1,
-			"three",
-			3,
-			"cat",
-			true,
-			false,
-		];
-		echo "I have " . $myArray[0] . " " . $myArray[4] . ".";
-
-		$cody = [
-			"id" => "001",
-			"name" => "Cody",
-			"color" => "Red",
-			"interest" => "Scaring people",
-			"favoriteFood" => "peas",
-			"age" => 199,
-			"adopted" => true,
-			"portrait" => "https://peprojects.dev/images/portrait.jpg",
-		];
-
-		$lima = [
-			"id" => "002",
-			"name" => "Limabean",
-			"color" => "Green",
-			"interest" => "gardening",
-			"favoriteFood" => "Lima beans",
-			"age" => 7,
-			"adopted" => false,
-			"portrait" => "https://peprojects.dev/images/portrait.jpg",
-		];
-
-		$reads = [
-			"id" => "003",
-			"name" => "Miss Reads-a-lot",
-			"color" => "gray",
-			"interest" => "reading",
-			"favoriteFood" => "book worms",
-			"age" => 2022,
-			"adopted" => false,
-			"portrait" => "https://peprojects.dev/images/portrait.jpg",
-		];
-
-		$monsters = [$cody, $lima, $reads];
-
-		echo " " . $cody["name"] . " is " . $cody["age"] . " years old.";
-
-		$story = $cody["name"] . " is " . $cody["age"] . " years old and his favorite food is " . $cody["favoriteFood"] . ".";
-		$template = "<p id=" . $cody["id"] . ">" . $story . "</p>";
-		echo $template;
-	 ?>
-
-	<h4>This is written Outside of PHP block</h4>
-	 <p>I have <?=$myArray[0]?> <?=$myArray[4]?>.</p>
-
-	<h3>Learn About <?=$cody["name"]?> the Monster</h3>
-
-	<p id="<?=$cody['id']?>">This monster's name is <?=$cody["name"]?>. Their favorite food is <?=$cody["favoriteFood"]?>.<br>
-	<?=$cody["name"]?> is <?=$cody["age"]?> years old.</p>
-
-</div>
-
-<div class="foreach">
-	<h1>ForEach Loops</h1>
-	<?php 
-		$nbaTeams = ["Kings", "Warriors", "Lakers", "Clippers", "Mavericks", "Spurs", "Rockets", "Knicks", "Bulls", "Raptors"];
-
-		echo "<ol>";
-
-		foreach ($nbaTeams as $team) {
-			echo "<li>" . $team . "</li>";
-		}
-		
-		echo "</ol>";
-	
-	 ?>
-</div>
-
-<div class="foreach2">
-	<h1>ForEach Monsters Practice</h1>
-	<?php 
-
-		echo "<ol>";
-
-		foreach ($monsters as $monster) {
-			$id = $monster["id"];
-			$name = $monster["name"];
-			$portrait = $monster["portrait"];
-			$status = $monster["adopted"];
-			$story = "My favorite food is " . $monster["favoriteFood"] . " and I am " . $monster[age] . " years old.";
-
-			if ($status == 1) {
-				$status = "I have a home!";
-			} else {
-				$status = "Adopt me!";
-			}
+		<main>
+			<section class="inner-column">
 			
-			echo "<li class='monster'>";
+				<h1 class='header-voice'>Adopt a Monster</h1>
 
-			echo 
-				"<monster-card id='$id'>" .
-					"<picture class='portrait'>" . "<img src='" . $portrait . "' . width='200'>" .
-					"<h2 class='name'>" . $name . "</h2>" .
+				<?php 
 
-					"<p class='story'>" . $story . "</p>" .
-					"<p class='status'>" . $status . "</p>" .
+				$codey = [
+					"id" => "a001",
+					"name" => "Codey",
+					"color" => "Red", 
+					"interest" => "scare people",
+					"favoriteFood" => "peas",
+					"age" => 199,
+					"adopted" => true,
+					"portrait" => "./images/codey.jpg",
+				];
+
+				$fragoo = [
+					"id" => "a002",
+					"name" => "Fragoo",
+					"color" => "rose",
+					"interest" => "splash in puddles",
+					"favoriteFood" => "shrimp and salmon",
+					"age" => 2,
+					"adopted" => false,
+					"portrait" => "./images/fragoo.jpg",
+				];
+
+				$lima = [
+					"id" => "a003",
+					"name" => "Limabean",
+					"color" => "Green",
+					"interest" => "garden",
+					"favoriteFood" => "Lima beans",
+					"age" => 7,
+					"adopted" => false,
+					"portrait" => "./images/limabean.jpg",
+				];
+
+				$reads = [
+					"id" => "a004",
+					"name" => "Miss Reads-a-lot",
+					"color" => "gray",
+					"interest" => "read",
+					"favoriteFood" => "book worms",
+					"age" => 2022,
+					"adopted" => false,
+					"portrait" => "./images/miss-reads-a-lot.jpg",
+				];
+
+				$banana = [
+					"id" => "a005",
+					"name" => "Mr Banana",
+					"color" => "yellow",
+					"interest" => "swing from tree branches",
+					"favoriteFood" => "banana peels",
+					"age" => 327,
+					"adopted" => true,
+					"portrait" => "./images/mr-banana.jpg",
+				];
+
+				$orangina = [
+					"id" => "a006",
+					"name" => "Orangina",
+					"color" => "orange",
+					"interest" => "bake banana pies",
+					"favoriteFood" => "kumquats (but not the peel)",
+					"age" => 105,
+					"adopted" => false,
+					"portrait" => "./images/orangina.png",
+				];
+
+				$shadow = [
+					"id" => "a007",
+					"name" => "Shadow",
+					"color" => "purple",
+					"interest" => "catch sunrays",
+					"favoriteFood" => "day old worms",
+					"age" => 44,
+					"adopted" => true,
+					"portrait" => "./images/shadow.jpg",
+				];
+
+				$monsters = [ 
+					$codey, 
+					$fragoo, 
+					$lima, 
+					$reads,
+					$banana,
+					$orangina,
+					$shadow,
+				];
+			 ?>
+			 <div class="card">
+				<?php 
+					echo "<ul>";
+
+					foreach ($monsters as $monster) {
+						$id = $monster["id"];
+						$name = $monster["name"];
+						$portrait = $monster["portrait"];
+						$age = $monster["age"];
+						$status = $monster["adopted"];
+
+						$story = "Boo! My name is " . $monster["name"] . ". My favorite food is " . $monster["favoriteFood"] . " and I love to " . $monster["interest"] . ".";
+
+						$message = "I have a home!";
+	
+
+						if ($status == 1) {
+							$message = "I have a home!";
+						} 
+						
 
 
-				"</monster-card>";
+						echo "<li class='monster'>";
 
-			echo "</li>";
+							echo 
+								"<monster-card id='$id'>" .
+									"<picture class='portrait'>" . "<img src='" . $portrait . "' . width='200'>" .
+									"<h2 class='name'>" . $name . "</h2>" .
+									"<h3 class='age'>" . "Age: " . $age . "</h3>" .
+									"<p class='story'>" . $story . "</p>" .
+									"<p class='$adopted'>" . $message . "</p>" .
 
-			
-		}
-		echo "</ol>";
 
-	 ?>
-</div>
+								"</monster-card>";
+
+						echo "</li>";
+
+						
+					}
+					echo "</ul>";
+				?>
+			</div>		
+			</section>
+		</main>
+
+	</body>
+</html>
