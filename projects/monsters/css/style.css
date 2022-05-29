@@ -32,14 +32,6 @@ a {
 	color: black;
 }
 
-.inner-column {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.portrait {
-	max-height: 50px;
-}
 /* - - FONT - - */
 .header-voice {
 	font-family: Marker Felt;
@@ -92,7 +84,7 @@ nav ul {
 	}
 }
 /* - - ADOPT BUTTON - - */
-.adopted .link {
+.adopted {
 	text-transform: uppercase;
 	font-size: 20px;
 	padding: 10px;
@@ -102,9 +94,9 @@ nav ul {
 	border-radius: 10px;
 }
 
-.not-adopted .link {
+.not-adopted {
 	text-transform: uppercase;
-	font-size:  20px;
+	font-size:  26px;
 	padding: 10px;
 	background-color: hsl(127, 70%, 61%);
 	text-align: center;
@@ -113,20 +105,18 @@ nav ul {
 	box-shadow: 0 0 15px black;
 }
 
-
 /* - - MONSTER CARDS - - */
-ul {
-	display: flex;
-	flex-grow: 1;
-}
-
 .monster {
 	padding: 10px;
 }
 
+.card ul {
+	display: flex;
+}
+
 monster-card {
 	display: flex;
-	border-radius: 10px;
+	border-radius: 5%;
 	padding: 15px;
 	min-width: 270px;
 	min-height: 450px;
@@ -135,15 +125,13 @@ monster-card {
 monster-card:hover {
 	transform: scale(1.2);
 	transition: all .2s ease-in-out;
-	z-index: 9;
 }
 
 @media (min-width: 700px) {
-	ul {
-		display: flex;
+	.card ul {
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		align-items: flex-start;
 	}
 
 	mosnter-card {
@@ -151,10 +139,9 @@ monster-card:hover {
 	}
 }
 
-.adopted {
-	filter: grayscale(1);
+#adopted {
+	background-color: black;
 }
-
 .story {
 	margin: 15px 0;
 }
