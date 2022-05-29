@@ -120,6 +120,7 @@
 					$shadow,
 				];
 			 ?>
+			
 			 <div class="card">
 				<?php 
 					echo "<ul>";
@@ -144,7 +145,7 @@
 						$specialClass = "not-adopted";
 					} 					
 
-
+					"<div id='$specialClass'>";
 						echo "<li class='monster'>";
 
 							echo 
@@ -159,7 +160,7 @@
 								"</monster-card>";
 
 						echo "</li>";
-
+					"</div>";	
 						
 					}
 					echo "</ul>";

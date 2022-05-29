@@ -29,6 +29,7 @@ ul {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 /* - - FONT - - */
@@ -55,6 +56,8 @@ a {
 nav {
 	display: flex;
 	justify-content: flex-end;
+	border-bottom: 2px solid gray;
+	background-color: hsl(172, 46%, 66%);
 }
 
 
@@ -99,7 +102,7 @@ nav ul {
 	text-align: center;
 	margin: 10px;
 	border-radius: 10px;
-	box-shadow: 10px 10px 10px black;
+	box-shadow: 0 0 15px black;
 }
 
 /* - - MONSTER CARDS - - */
@@ -136,6 +139,9 @@ monster-card:hover {
 	}
 }
 
+#adopted {
+	background-color: black;
+}
 .story {
 	margin: 15px 0;
 }
