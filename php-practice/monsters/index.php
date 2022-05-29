@@ -121,8 +121,10 @@
 				];
 			 ?>
 			
-			 <div class="card">
+			 
 				<?php 
+
+
 					echo "<ul>";
 
 					foreach ($monsters as $monster) {
@@ -145,8 +147,7 @@
 						$specialClass = "not-adopted";
 					} 					
 
-					"<div id='$specialClass'>";
-						echo "<li class='monster'>";
+						echo "<li class='monster $specialClass'>";
 
 							echo 
 								"<monster-card id='$id'>" .
@@ -154,18 +155,17 @@
 									"<h2 class='name'>" . $name . "</h2>" .
 									"<h3 class='age'>" . "Age: " . $age . "</h3>" .
 									"<p class='story'>" . $story . "</p>" .
-									"<p class='$specialClass'>" . $message . "</p>" .
+									"<p class='link'>" . $message . "</p>" .
 
 
 								"</monster-card>";
 
 						echo "</li>";
-					"</div>";	
 						
 					}
 					echo "</ul>";
 				?>
-			</div>		
+				
 			</section>
 		</main>
 

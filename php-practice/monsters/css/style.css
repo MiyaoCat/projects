@@ -32,6 +32,11 @@ a {
 	color: black;
 }
 
+.inner-column {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* - - FONT - - */
 .header-voice {
 	font-family: Marker Felt;
@@ -84,7 +89,7 @@ nav ul {
 	}
 }
 /* - - ADOPT BUTTON - - */
-.adopted {
+.adopted .link {
 	text-transform: uppercase;
 	font-size: 20px;
 	padding: 10px;
@@ -94,7 +99,7 @@ nav ul {
 	border-radius: 10px;
 }
 
-.not-adopted {
+.not-adopted .link {
 	text-transform: uppercase;
 	font-size:  26px;
 	padding: 10px;
@@ -110,13 +115,9 @@ nav ul {
 	padding: 10px;
 }
 
-.card ul {
-	display: flex;
-}
-
 monster-card {
 	display: flex;
-	border-radius: 5%;
+	border-radius: 10px;
 	padding: 15px;
 	min-width: 270px;
 	min-height: 450px;
@@ -128,10 +129,11 @@ monster-card:hover {
 }
 
 @media (min-width: 700px) {
-	.card ul {
+	ul {
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: flex-start;
+		justify-content: center;
 	}
 
 	mosnter-card {
@@ -139,9 +141,10 @@ monster-card:hover {
 	}
 }
 
-#adopted {
-	background-color: black;
+.adopted {
+	filter: grayscale(1);
 }
+
 .story {
 	margin: 15px 0;
 }
