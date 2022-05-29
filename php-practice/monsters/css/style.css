@@ -21,6 +21,16 @@ picture img {
 	height:  auto;
 }
 
+ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
 /* - - FONT - - */
 .header-voice {
 	font-family: Marker Felt;
@@ -31,9 +41,9 @@ picture img {
 
 .name {
 	font-family: Marker Felt;
-	font-size:  20px;
+	font-size:  25px;
 	text-align: center;
-	margin: 10px 0;
+	margin: 15px 0;
 }
 
 .age {
@@ -41,19 +51,55 @@ picture img {
 	margin: 8px 0;
 }
 
-/* - - ADOPT BUTTON - - */
- {
-	text-transform: uppercase;
-}
-
+/* - - NAV BAR - - */
 nav {
-	min-height: 70px;
+	display: flex;
+	justify-content: flex-end;
 }
 
-ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+nav ul {
+	min-height: 70px;
+	display: none;
+}
+
+.menu {
+	max-width: 50px;
+}
+
+@media (min-width: 700px) {
+	.menu {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+		padding: 5px 10px;
+		font-size: 26px;
+	}
+}
+/* - - ADOPT BUTTON - - */
+.adopted {
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 10px;
+	background-color: hsl(1, 85%, 51%);
+	text-align: center;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.not-adopted {
+	text-transform: uppercase;
+	font-size:  26px;
+	padding: 10px;
+	background-color: hsl(127, 70%, 61%);
+	text-align: center;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
 }
 
 /* - - MONSTER CARDS - - */
@@ -61,24 +107,65 @@ ul {
 	padding: 10px;
 }
 
-monster-card {
-	border: 1px solid blue;
-	background-color:  blue;
+.card ul {
+	display: flex;
 }
 
+monster-card {
+	display: flex;
+	border-radius: 5%;
+	padding: 15px;
+	min-width: 270px;
+	min-height: 450px;
+	justify-content: center;
+}
+monster-card:hover {
+	transform: scale(1.2);
+	transition: all .2s ease-in-out;
+}
 
+@media (min-width: 700px) {
+	.card ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
 
+	mosnter-card {
+		min-height: 500px;
+	}
+}
 
+.story {
+	margin: 15px 0;
+}
+#a001 {
+	background-color:  hsl(354, 70%, 61%);
+}
 
+#a002 {
+	background-color:  hsl(347, 70%, 61%);
+}
 
+#a003 {
+	background-color:  hsl(102, 70%, 61%);
+}
 
+#a004 {
+	background-color:  hsl(217, 70%, 61%);
+}
 
+#a005 {
+	background-color:  hsl(50, 70%, 61%);
+}
 
+#a006 {
+	background-color:  hsl(22, 70%, 61%);
+}
 
-
-
-
-
+#a007 {
+	background-color:  hsl(270, 70%, 61%);
+}
 
 
 

@@ -14,10 +14,13 @@
 		<header>
 			<section class='inner-column'>
 				<nav>
+					<div class="menu-wrapper">
+						<img class='menu' src="./images/hamburger-menu.png">
+					</div>
 					<ul>
-						<li>Home</li>
-						<li>Monsters</li>
-						<li>Contact</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Monsters</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -38,7 +41,7 @@
 					"favoriteFood" => "peas",
 					"age" => 199,
 					"adopted" => true,
-					"portrait" => "./images/codey.jpg",
+					"portrait" => "./images/codey.png",
 				];
 
 				$fragoo = [
@@ -49,7 +52,7 @@
 					"favoriteFood" => "shrimp and salmon",
 					"age" => 2,
 					"adopted" => false,
-					"portrait" => "./images/fragoo.jpg",
+					"portrait" => "./images/fragoo.png",
 				];
 
 				$lima = [
@@ -60,7 +63,7 @@
 					"favoriteFood" => "Lima beans",
 					"age" => 7,
 					"adopted" => false,
-					"portrait" => "./images/limabean.jpg",
+					"portrait" => "./images/limabean.png",
 				];
 
 				$reads = [
@@ -71,7 +74,7 @@
 					"favoriteFood" => "book worms",
 					"age" => 2022,
 					"adopted" => false,
-					"portrait" => "./images/miss-reads-a-lot.jpg",
+					"portrait" => "./images/miss-reads-a-lot.png",
 				];
 
 				$banana = [
@@ -82,7 +85,7 @@
 					"favoriteFood" => "banana peels",
 					"age" => 327,
 					"adopted" => true,
-					"portrait" => "./images/mr-banana.jpg",
+					"portrait" => "./images/mr-banana.png",
 				];
 
 				$orangina = [
@@ -104,7 +107,7 @@
 					"favoriteFood" => "day old worms",
 					"age" => 44,
 					"adopted" => true,
-					"portrait" => "./images/shadow.jpg",
+					"portrait" => "./images/shadow.png",
 				];
 
 				$monsters = [ 
