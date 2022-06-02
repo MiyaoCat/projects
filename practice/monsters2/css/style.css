@@ -38,7 +38,7 @@ a {
 }
 
 /* - - FONT - - */
-.header-voice {
+/*.header-voice {
 	font-family: Marker Felt;
 	font-size: clamp(40px, 5vw, 100px);
 	text-align: center;
@@ -58,7 +58,7 @@ a {
 }
 
 /* - - NAV BAR - - */
-nav {
+/*nav {
 	display: flex;
 	justify-content: flex-end;
 	border-bottom: 2px solid gray;
@@ -87,9 +87,9 @@ nav ul {
 		padding: 5px 10px;
 		font-size: 26px;
 	}
-}
+}*/
 /* - - ADOPT BUTTON - - */
-.adopted .link {
+/*.adopted .link {
 	text-transform: uppercase;
 	font-size: 20px;
 	padding: 10px;
@@ -101,7 +101,7 @@ nav ul {
 
 .not-adopted .link {
 	text-transform: uppercase;
-	font-size:  26px;
+	font-size:  20px;
 	padding: 10px;
 	background-color: hsl(127, 70%, 61%);
 	text-align: center;
@@ -109,8 +109,14 @@ nav ul {
 	border-radius: 10px;
 	box-shadow: 0 0 15px black;
 }
+*/
 
 /* - - MONSTER CARDS - - */
+/*ul {
+	display: flex;
+	flex-grow: 1;
+}
+
 .monster {
 	padding: 10px;
 }
@@ -126,6 +132,7 @@ monster-card {
 monster-card:hover {
 	transform: scale(1.2);
 	transition: all .2s ease-in-out;
+	z-index: 9;
 }
 
 @media (min-width: 700px) {
@@ -174,7 +181,7 @@ monster-card:hover {
 
 #a007 {
 	background-color:  hsl(270, 70%, 61%);
-}
+}*/
 
 
 
