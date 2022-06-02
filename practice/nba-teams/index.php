@@ -17,39 +17,27 @@
 		</section>
 	</header>
 
-<!-- 	<main>
-		<section class="inner-column"> -->
-				<?php include('team-data.php'); ?> 
+	<main>
+		<section class="inner-column">
+			<?php include('team-generator.php'); ?> 
+			<ol class="team-list">
+				<team-card>
+					<?php foreach ($teams as $team) { ?>
+					<li><h2 style="font-size: 22px">Team: <?=$team['name'];?></h2></li>
+					<li>City: <?=$team['city'];?></li>
+					<li>Conference: <?=$team['conference'];?></li>
+					<li>Division: <?=$team['division'];?></li>
+					<li>Record: <?=$team['record']; ?></li>
+					<li>Playoffs: <?=$team['playoffs']; ?></li>
+					<li><b><?=$message ?></b></li>
+					<!-- <img src="<?=$team['logo'];?>"> -->
 
-				<?php 
-					function playoffsTag($something) {
-						if ($something) {
-							return "<p class='in-playoffs'> Playoffs!</p>";
-						}
-					}
-					function playoffsClass($inPlayoffs) {
-						if ($inPlayoffs) {
-							return "playoff-bound";
-						}
-					}
-				?>
-			<ol class="team-list">	
-				<?php foreach ($teams as $team) { 
-					$style = playoffsClass($team['playoffs']);
-				?>
-				<li class="team <?=$style?>">
-					
-					<team-card>
-						<h2>Team: <?=$team['name'];?></h3>
-						<p><?=$team['city'];?></p>
-						<?=playoffsTag($team['playoffs'])?>
-					</team-card>
-				</li>
-				<?php } ?>
+					<?php } ?>	
+				</team-card>
 			</ol>	
-<!-- 		</section>
+		</section>
 
-	</main> -->
+	</main>
 
 	<footer>
 		<section class="inner-column">
