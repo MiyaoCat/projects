@@ -1,5 +1,5 @@
 <?php 
-	function teamGenerator($name, $city, $conference, $record, $starPlayer, $playoffs, $logo) {
+	function teamGenerator($name, $city, $conference, $division, $record, $starPlayer, $playoffs, $logo) {
 		$team = [
 			"name" => $name,
 			"city" => $city,
@@ -13,30 +13,52 @@
 		return $team;
 	};
 	
+	$kings = teamGenerator("Kings", "Sacramento", "West", "Pacific", "30-52", "De'Aaron Fox", false, "./images/kings.png" );
 
+	$twolves = teamGenerator("Timberwolves", "Minnesota", "West", "Northwest", "46-36", "Karl-Anthony Towns", true, "./images/twolves.png");
 
-	$kings = teamGenerator("Kings", "Sacramento", "West", "Pacific", "30-52", "De'Aaron Fox", false, "./images/kings.png");
-	$twolves = teamGenerator("Timberwolves", "Minnesota", "West", "Northwest", "46-36", "Karl-Anthony Towns", true, "./images/twolves.svg");
-	$celtics = teamGenerator("Celtics", "Boston", "East", "Atlantic", "Jayson Tatum", true, "./images/celtics.png");
-	$heat = teamGenerator("heat", "Miami", "East", "Southeast", "Jimmy Butler", true, "./images/heat.png");
-	$spurs = teamGenerator("Spurs", "San Antonio", "West", "Southwest", "DeJaunte Murray", false, "./images/spurs.png");
+	$celtics = teamGenerator("Celtics", "Boston", "East", "Atlantic", "50-32", "Jayson Tatum", true, "./images/celtics.png" );
+
+	$heat = teamGenerator("Heat", "Miami", "East", "Southeast", "52-30", "Jimmy Butler", true, "./images/heat.png" );
+
+	$spurs = teamGenerator("Spurs", "San Antonio", "West", "Southwest", "40-42", "DeJaunte Murray", false, "./images/spurs.png" );
 
 	$teams = [$kings, $twolves, $celtics, $heat, $spurs];
+	$message = "Playoff bound!";
+
+	foreach ($teams as $team) {
+		if ($team['playoffs'] == 1) {
+			 $message;
+		} else {
+			$message = "We suck!";
+		}
+	};
+
+	echo $twolves['name'];
+	echo $twolves['city'];
+	echo $twolves['conference'];
+	echo $twolves['division'];
+	echo $twolves['record'];
 
 
+	echo $heat['playoffs'];
+	echo $celtics['playoffs'];
+	echo $spurs['playoffs'];
 
-foreach ($teams as $team) {
- 	 echo $team['city'];
-
- }
+	
 
 ?>
 
- <?php  ?>
+<p>hello, world!</p>
 
-<!--   	<li class="team">
- 		<team-card>
- 			<h2 class="name"><?=$team['name']?></h2>
- 		</team-card>
 
- 	</li> -->
+
+
+
+
+
+
+
+
+
+

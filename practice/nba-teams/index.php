@@ -21,11 +21,20 @@
 		<section class="inner-column">
 			<?php include('team-generator.php'); ?> 
 			<ol class="team-list">
-				<?php foreach ($teams as $team) { ?>
-				<li><h2><?=$team['name'];?></h2></li>
-				<li class="<?=$city ?>">City: <?=$team['city'];?></li>
+				<team-card>
+					<?php foreach ($teams as $team) { ?>
+					<li><h2 style="font-size: 22px">Team: <?=$team['name'];?></h2></li>
+					<li>City: <?=$team['city'];?></li>
+					<li>Conference: <?=$team['conference'];?></li>
+					<li>Division: <?=$team['division'];?></li>
+					<li>Record: <?=$team['record']; ?></li>
+					<li>Playoffs: <?=$team['playoffs']; ?></li>
+					<li><b><?=$message ?></b></li>
+					<!-- <img src="<?=$team['logo'];?>"> -->
 
-				<?php } ?>	
+					<?php } ?>	
+				</team-card>
+			</ol>	
 		</section>
 
 	</main>
