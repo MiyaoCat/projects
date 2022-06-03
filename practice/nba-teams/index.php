@@ -21,19 +21,27 @@
 		<section class="inner-column">
 			<?php include('team-generator.php'); ?> 
 			<ol class="team-list">
-				<team-card>
-					<?php foreach ($teams as $team) { ?>
-					<li><h2 style="font-size: 22px">Team: <?=$team['name'];?></h2></li>
-					<li>City: <?=$team['city'];?></li>
-					<li>Conference: <?=$team['conference'];?></li>
-					<li>Division: <?=$team['division'];?></li>
-					<li>Record: <?=$team['record']; ?></li>
-					<li>Playoffs: <?=$team['playoffs']; ?></li>
-					<li><b><?=$message ?></b></li>
-					<!-- <img src="<?=$team['logo'];?>"> -->
+				
+					<?php foreach ($teams as $team) { 
+						$message = "Playoff bound!";
+
+						if ($team['playoffs'] == false) {
+			 						$message = "We suck!";
+						} 	
+					?>
+						<li>
+							<team-card>
+								<li><h2 style="font-size: 22px">Team: <?=$team['name'];?></h2></li>
+								<li>City: <?=$team['city'];?></li>
+								<li>Conference: <?=$team['conference'];?></li>
+								<li>Division: <?=$team['division'];?></li>
+								<li>Record: <?=$team['record']; ?></li>
+								<p><?=$message ?></p>
+							</team-card>
+						</li>
 
 					<?php } ?>	
-				</team-card>
+				
 			</ol>	
 		</section>
 

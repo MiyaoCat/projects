@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 /*@import 'meyer-reset.css';*/
+=======
+@import 'meyer-reset.css';
+>>>>>>> save if/else function for nba card
 
 * {
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
 	/*background-color: #d4dffd;*/
 	font-family: Helvetica;
+=======
+body * {
+	border:  1px solid rgba(0,0,0,.5);
+}
+
+body {
+	background-color: #d4dffd;
+>>>>>>> save if/else function for nba card
 }
 
 picture {
@@ -21,6 +34,7 @@ picture img {
 
 nav {
 	height: 100px;
+<<<<<<< HEAD
 }
 
 h2 {
@@ -88,3 +102,6 @@ team-card .in-playoffs {
 
 
 
+=======
+}
+>>>>>>> save if/else function for nba card

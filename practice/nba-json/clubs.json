@@ -4,8 +4,12 @@
     "abbreviation": "ATL",
     "teamName": "Atlanta Hawks",
     "simpleName": "Hawks",
+<<<<<<< HEAD
     "location": "Atlanta",
     "playoffs": false
+=======
+    "location": "Atlanta"
+>>>>>>> save if/else function for nba card
   },
   {
     "teamId": 1610612738,
@@ -40,8 +44,12 @@
     "abbreviation": "CLE",
     "teamName": "Cleveland Cavaliers",
     "simpleName": "Cavaliers",
+<<<<<<< HEAD
     "location": "Cleveland",
     "playoffs": false
+=======
+    "location": "Cleveland"
+>>>>>>> save if/else function for nba card
   },
   {
     "teamId": 1610612742,

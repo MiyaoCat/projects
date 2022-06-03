@@ -27,6 +27,7 @@
 	$message = "Playoff bound!";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?>
 
 =======
@@ -51,6 +52,8 @@
 
 	
 
+=======
+>>>>>>> save if/else function for nba card
 ?>
 
 <p>hello, world!</p>
