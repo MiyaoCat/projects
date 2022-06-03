@@ -5,8 +5,9 @@
 }
 
 body * {
-	border:  3px solid rgba(0,0,0,.5);
+	border:  1px solid rgba(0,0,0,.5);
 }
+
 body {
 	background-color: #d4dffd;
 }
@@ -15,7 +16,7 @@ picture {
 	display: block;
 }
 
-img {
+picture img {
 	display: block;
 	width:  100%;
 	height:  auto;
