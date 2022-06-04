@@ -22,25 +22,22 @@
 			<?php include('team-generator.php'); ?> 
 			<ol class="team-list">
 				
-					<?php foreach ($teams as $team) { 
-						$message = "Playoff bound!";
+				<?php foreach ($teams as $team) { 
+					$message = "We're trash!";
 
-						if ($team['playoffs'] == false) {
-			 						$message = "We suck!";
-						} 	
-					?>
-						<li>
-							<team-card>
-								<li><h2 style="font-size: 22px">Team: <?=$team['name'];?></h2></li>
-								<li>City: <?=$team['city'];?></li>
-								<li>Conference: <?=$team['conference'];?></li>
-								<li>Division: <?=$team['division'];?></li>
-								<li>Record: <?=$team['record']; ?></li>
-								<p><?=$message ?></p>
-							</team-card>
-						</li>
-
-					<?php } ?>	
+					if ($team['playoffs'] == true) {
+		 						$message = "Playoffs!";
+		 						$specialClass = "playoffs";
+					} 	
+				?>
+				<li><h2>Team: <?=$team['name'];?></h2></li>
+				<li>City: <?=$team['city'];?></li>
+				<li>Conference: <?=$team['conference'];?></li>
+				<li>Division: <?=$team['division'];?></li>
+				<li>Record: <?=$team['record']; ?></li>
+				<p><?=$message ?></p>
+							
+				<?php } ?>	
 				
 			</ol>	
 		</section>
