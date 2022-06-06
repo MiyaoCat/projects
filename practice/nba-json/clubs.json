@@ -5,11 +5,16 @@
     "teamName": "Atlanta Hawks",
     "simpleName": "Hawks",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "location": "Atlanta",
     "playoffs": false
 =======
     "location": "Atlanta"
 >>>>>>> save if/else function for nba card
+=======
+    "location": "Atlanta",
+    "playoffs": false
+>>>>>>> php practice
   },
   {
     "teamId": 1610612738,
@@ -45,11 +50,16 @@
     "teamName": "Cleveland Cavaliers",
     "simpleName": "Cavaliers",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "location": "Cleveland",
     "playoffs": false
 =======
     "location": "Cleveland"
 >>>>>>> save if/else function for nba card
+=======
+    "location": "Cleveland",
+    "playoffs": false
+>>>>>>> php practice
   },
   {
     "teamId": 1610612742,

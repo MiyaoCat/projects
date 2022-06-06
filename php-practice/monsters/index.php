@@ -110,15 +110,7 @@
 					"portrait" => "./images/shadow.png",
 				];
 
-				$monsters = [ 
-					$codey, 
-					$fragoo, 
-					$lima, 
-					$reads,
-					$banana,
-					$orangina,
-					$shadow,
-				];
+				$monsters = [ $codey, $fragoo, $lima, $reads,$banana,$orangina, $shadow];
 			 ?>
 			
 			 <div class="card">

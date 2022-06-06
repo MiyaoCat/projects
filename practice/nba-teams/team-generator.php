@@ -26,38 +26,8 @@
 	$teams = [$kings, $twolves, $celtics, $heat, $spurs];
 	$message = "Playoff bound!";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ?>
 
-=======
-	foreach ($teams as $team) {
-		if ($team['playoffs'] == 1) {
-			 $message;
-		} else {
-			$message = "We suck!";
-		}
-	};
-
-	echo $twolves['name'];
-	echo $twolves['city'];
-	echo $twolves['conference'];
-	echo $twolves['division'];
-	echo $twolves['record'];
-
-
-	echo $heat['playoffs'];
-	echo $celtics['playoffs'];
-	echo $spurs['playoffs'];
-
-	
-
-=======
->>>>>>> save if/else function for nba card
-?>
-
-<p>hello, world!</p>
->>>>>>> php function work
 
 
 

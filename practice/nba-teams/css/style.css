@@ -1,13 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*@import 'meyer-reset.css';*/
 =======
 @import 'meyer-reset.css';
 >>>>>>> save if/else function for nba card
+=======
+/*@import 'meyer-reset.css';*/
+>>>>>>> php practice
 
 * {
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 body {
 	/*background-color: #d4dffd;*/
@@ -20,6 +25,11 @@ body * {
 body {
 	background-color: #d4dffd;
 >>>>>>> save if/else function for nba card
+=======
+body {
+	/*background-color: #d4dffd;*/
+	font-family: Helvetica;
+>>>>>>> php practice
 }
 
 picture {
@@ -35,6 +45,9 @@ picture img {
 nav {
 	height: 100px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> php practice
 }
 
 h2 {
@@ -102,6 +115,9 @@ team-card .in-playoffs {
 
 
 
+<<<<<<< HEAD
 =======
 }
 >>>>>>> save if/else function for nba card
+=======
+>>>>>>> php practice
