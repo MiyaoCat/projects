@@ -4,7 +4,8 @@
     "abbreviation": "ATL",
     "teamName": "Atlanta Hawks",
     "simpleName": "Hawks",
-    "location": "Atlanta"
+    "location": "Atlanta",
+    "playoffs": false
   },
   {
     "teamId": 1610612738,
@@ -39,7 +40,8 @@
     "abbreviation": "CLE",
     "teamName": "Cleveland Cavaliers",
     "simpleName": "Cavaliers",
-    "location": "Cleveland"
+    "location": "Cleveland",
+    "playoffs": false
   },
   {
     "teamId": 1610612742,

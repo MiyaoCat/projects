@@ -54,4 +54,6 @@
 		"logo" => "./images/spurs.png",
 	];
 
+	$teams = [$kings, $twolves, $celtics, $heat, $spurs];
+
  ?>

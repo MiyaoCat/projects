@@ -1,15 +1,15 @@
 
 	<main>
 		<section class="inner-column">
-			<?php include('team-generator.php'); ?> 
+			<?php include('clubs.json'); ?> 
 			<ol class="team-list">
 				
 					<?php foreach ($clubs as $club) { ?>
 						<li>
 							<team-card>
 										
-								<?=$club['simpleName']?>
-								<p><?=prideMessage($team['playoffs']) ?></p>
+								<?=$club['location']?><
+								
 							</team-card>
 						</li>
 

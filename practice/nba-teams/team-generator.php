@@ -28,7 +28,6 @@
 
 ?>
 
-<p>hello, world!</p>
 
 
 
