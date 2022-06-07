@@ -63,7 +63,7 @@
 
 	<?php 
 		$string = "";
-		// $length = count_chars($_POST["string"]);
+		// $length = strlen($_POST["string"]);
 
 		if ( isset($_POST["string"]) ) {
 			 $string = $_POST["string"];
