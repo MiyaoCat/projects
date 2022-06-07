@@ -6,6 +6,7 @@
 
 	h1 {
 		font-size: 22px;
+		font-family: Helvetica;
 	}
 	div {
 		padding: 5px 10px;
