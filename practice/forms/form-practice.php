@@ -13,16 +13,16 @@
 		border: 2px solid black;
 	}
 	.hello {
-		background-color: hsl(100, 20%, 70%);
+		background-color: hsl(100, 30%, 70%);
 	}
 	.count-char {
-		background-color: hsl(183, 20%, 70%);
+		background-color: hsl(183, 30%, 70%);
 	}
 	.math {
-		background-color: hsl(7, 20%, 70%);
+		background-color: hsl(7, 30%, 70%);
 	}
 	.calculator {
-		background-color: hsl(320, 20%, 70%);
+		background-color: hsl(320, 30%, 70%);
 	}
 </style>
 
