@@ -25,7 +25,7 @@ Input Name: Is a specific name/id that we use to refer to the input field.
 
 Can target any attribute in CSS: 
 
-Ex. [type='submit']d
+Ex. [type='submit']
 
 GET request = Receive something
 POST request = Send something (up to the server)
