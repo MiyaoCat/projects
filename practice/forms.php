@@ -31,14 +31,14 @@
 	if (isset($_POST["submitted"])) {
 
 		if ( isset($_POST["guests"]) ) {
-			if ( $_POST["guests"] >= 0 ) {
+			// if ( $_POST["guests"] >= 0 ) {
 				$guests = $_POST["guests"];
-			}
+			// }
 		}	
 		if ( isset($_POST["berries"]) ) {
-			if ( $_POST["berries"] >= 0) {
+			// if ( $_POST["berries"] >= 0) {
 			$berries = $_POST["berries"];
-			}
+			// }
 		}
 
 		$total = ($guests) * ($berries);
