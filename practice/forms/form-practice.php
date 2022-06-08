@@ -62,12 +62,18 @@
 	<p>Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contains. </p>
 
 	<?php 
-		$string = "";
-		// $length = strlen($_POST["string"]);
+		//setup. Establish variables
+		$string = "test";
 
+		//If there's a form submission. Reassign values
 		if ( isset($_POST["string"]) ) {
 			 $string = $_POST["string"];
 		};
+
+		//calculations
+		$length = strlen($string);
+
+		$message = "The $string is $length long";
 
 	 ?>
 
@@ -75,7 +81,8 @@
 		 <form method="POST">
 		 	<p>Please enter a string of chracters. PLEASE!</p>
 		 	<input type="text" name="string" value="<?=$string?>">
-		 	<p><?=$string?> <?=$length?></p>
+		 	<p><?=$message?></p>
+		 	<button type="submit" name="enter">Click</button>
 
 		 </form>
 </div>
