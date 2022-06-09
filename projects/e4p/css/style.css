@@ -1,0 +1,42 @@
+@import 'meyer-reset.css';
+
+* {
+	box-sizing: border-box;
+}
+
+/*body * {
+	border:  3px solid rgba(0,0,0,.5);*/
+}
+body {
+	background-color: #d4dffd;
+	font-family: Times New Roman;
+}
+
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	width:  100%;
+	height:  auto;
+}
+
+nav {
+	height: 100px;
+}
+
+.loud-voice {
+	font-size: 30px;
+	color: red;
+}
+
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3em;
+}
+[name] {
+	color: blue;
+}
