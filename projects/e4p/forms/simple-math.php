@@ -8,7 +8,7 @@
 	<meta name="description" content="How many characters did you type?">
 	<title></title>
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 	<header>
